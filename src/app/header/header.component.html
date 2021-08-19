@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#home"><img src="../../assets/images/logo-long.jpg" style="width:35%;margin-left: 5%;"></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav" style="margin-left: auto !important;margin-right: 3%;">
+    <li class="nav-item">
+      <a class="nav-link" href="#about"><h5 style="color: black;">About</h5></a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="dropbtn"><a class="nav-link" href="#services"><h5 style="color: black;">Services</h5></a></button>
+        <div class="dropdown-content">
+          <a (click)="openDialog('Chemical Testing')">Chemical Testing</a>
+          <a (click)="openDialog('Mechanical Testing')">Mechanical Testing</a>
+          <a (click)="openDialog('Water Testing')">Water Testing</a>
+          <a (click)="openDialog('Polymer Testing')">Polymer Testing</a>
+          <a (click)="openDialog('Special Testing')">Special Testing</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact"><h5 style="color: black;">Contact</h5></a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#team">Team</a>
+    </li> -->
+  </ul>
+</nav>

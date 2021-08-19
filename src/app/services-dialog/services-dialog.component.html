@@ -1,0 +1,79 @@
+<h2 mat-dialog-title>{{testingType}}</h2>
+<mat-dialog-content class="mat-typography">
+  <div *ngIf="testingType=='Chemical Testing'">
+    <p>Products :Metal and Alloys, Ceramics, Chemical and Solvents, Soil and Sludge,  Soaps and Detergents, EVA, 
+      Leather, Textile, Paints.</p>
+
+    <h3>Test Parameters</h3>
+    <ul>
+      <li>Chemical composition by Spectro analysis</li>
+      <li>Trace metal analysis by ICP-OES</li>
+      <li>Purity/Assay</li>
+      <li>Material composition</li>
+      <li>Unknown material identification</li>
+    </ul>
+  </div>
+  <div *ngIf="testingType=='Mechanical Testing'">
+    <p>Products :Ferrous & Non-ferrous alloys & products, Tubes, sheets, plates, rods, wires, welded & brazed products, spot welded & seam welded sheets.</p>
+
+    <h3>Test Parameters</h3>
+    <ul>
+      <li>Tensile Test</li>
+      <li>Rockwell Hardness</li>
+      <li>Brinell Hardness</li>
+      <li>Vickers Hardness</li>
+      <li>Compression Test</li>
+      <li>Bend Test</li>
+      <li>Re-Bend Test</li>
+      <li>Fracture Test</li>
+      <li>Breaking Load</li>
+      <li>Proof Load Test</li>
+      <li>Shear Test</li>
+      <li>Welder Qualification Tests as per ASME, AWS, IS and ISO standards</li>
+      <li>Flexural Test</li>
+      <li>Flattening Test</li>
+      <li>Drift Expansion</li>
+      <li>Crushing Test</li>
+      <li>Compression Spring parameters Test</li>
+    </ul>
+  </div>
+  <div *ngIf="testingType=='Water Testing'">
+    <p>Products :Drinking water  and Package drinking water, Swimming pool water, Construction Water, Effluent analysis, Soil and Sludge analysis.</p>
+
+    <h3>Test Parameters</h3>
+    <ul>
+      <li>Chemical tests and Physical tests as per IS 10500, IS 14543, WHO and other relevant standards</li>
+    </ul>
+  </div>
+  <div *ngIf="testingType=='Polymer Testing'">
+    <p>Products: Automotive parts, Rubbers & Plastics.</p>
+    <h3>Test Parameters</h3>
+    <ul>
+      <li>Mechanical testing of rubbers and plastics
+        <ul>
+          <li>Shore hardness A&D scale</li>
+          <li>Tensile strength & elongation</li>
+          <li>Compressive strength</li>
+          <li>Impact test for plastics</li>
+          <li>Shore Hardness for Plastic/Rubber</li>
+        </ul>
+      </li>
+      <li>Melting Point</li>
+      <li>Water Absorption</li>
+      <li>Moisture Analysis</li>
+      <li>Filler Content</li>
+      <li>Ash Content</li>
+    </ul>
+  </div>
+  <div *ngIf="testingType=='Special Testing'">
+    <ul>
+      <li><h4>Failure Analysis</h4></li>
+      <li><h4>Reverse Engineering</h4></li>
+      <li><h4>Lab Build & Setup</h4></li>
+      <li><h4>NABL Accreditation Support</h4></li>
+    </ul>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
